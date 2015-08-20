@@ -10,11 +10,20 @@
         <meta name="description" content="">
         <script type="text/javascript" src="../scripts/jquery-2.1.4.min.js"></script>
         <!--Librerias Bootstrap-->
-        <link href="../ccs/bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="../ccs/font-font-awesome-4.4.0/css/font-awesome.min.css">
+        <link href="../css/bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/font-font-awesome-4.4.0/css/font-awesome.min.css">
         <script src="../css/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="../css/app.css">
     </head>
     <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            ...
+         </div>
+    </nav>
+    <div class="tope">
+        
+    </div>
         <section >
             <div class="container">
                 <form role="form">
@@ -63,7 +72,7 @@
                             </div>
                     </div>
                     
-                      
+                <br class="col-md-12">
                 <h3 class="col-md-12">Datos Geograficos</h3>
                 <hr color="tomato" width= 50%/>
                     <div class="col-md-4">
@@ -108,9 +117,9 @@
                         <label id="lblDireccion" class="lblDireccion">Direccion</label>
                         <input type="text" class="form-control" id="txtDireccion" placeholder="Introduca su direccion">
                     </div>
-
+                
                 <h3 class="col-md-12">Dato usuarios</h3>
-                <hr color="tomato" width= 50%/>
+                <hr color="red" width= 50%/>
                     <div class="col-md-4">
                         <label id="lblUsername" class="lblUsername">Nombre Usuario</label>
                         <input type="text" class="form-control" id="txtUsername" placeholder="Introduca su Usuario">
@@ -123,7 +132,7 @@
                         <label id="lblRPassword" class="lblRPassword">Repita Contrase&ntilde;a</label>
                         <input type="password" class="form-control" id="txtRPassword" placeholder="Repita Contraseña">
                     </div>
-                    <br>
+                    <br class="col-md-12">
                      <div class="col-md-4">
                         <label id="selectSta" class="selectSta" for="select">Status</label>
                           <div class="">
@@ -138,19 +147,26 @@
                             </select>
                             </div>
                     </div>
-                    <hr  color="tomato" width= 50%/>
-                    <div class="col-md-5">
-                        
+                    <br class="col-md-12">
+                    <hr class="tope" color="tomato" width= 50%/>
+                
+                    <div class="col-md-4">
+                        <button type="button" class="btn btn-default">
+                        <span class="glyphicon glyphicon-new-window"></span> Registrarce
+                        </button>
+                        <button type="button" class="btn btn-default">
+                        <span class="glyphicon glyphicon-saved"></span> Enviar
+                        </button>
                     </div>
-                    <button type="button" class="btn btn-default">
-                    <span class="glyphicon glyphicon-new-window"></span> Registrarce
-                    </button>
-                    <button type="button" class="btn btn-default">
-                    <span class="glyphicon glyphicon-saved"></span> Enviar
-                    </button>
+                    
                 </form>
             </div>
         </section>
+        <nav class="navbar navbar-default navbar-fixed-bottom">
+                 <div class="container">
+                     ...
+                </div>
+            </nav>
     </body>
 </html>
 <html>

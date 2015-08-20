@@ -14,35 +14,47 @@
 
         <script type="text/javascript" src="../scripts/jquery-2.1.4.min.js"></script>
         <!--Librerias Bootstrap-->
-        <link href="../ccs/bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="../ccs/font-font-awesome-4.4.0/css/font-awesome.min.css">
+        <link href="../css/bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/font-font-awesome-4.4.0/css/font-awesome.min.css">
         <script src="../css/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="../css/app.css">
+
+        
     </head>
     <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            ...
+         </div>
+    </nav>
+    <div class="centrar">
+    <img src="../imagenes/inces.jpg" alt="Responsive image" class="img-responsive">
+    </div>
+        
+    
         <section >
             <div class="container">
                <form role="form">
-                        
                             <div>
                                 <label id="lblUsername" class="lblUsername">Nombre Usuario</label>
                                 <input type="text" class="form-control" id="txtUsername" placeholder="Introduca su Usuario">
                             </div>
+                            <br>
                             <div>
                                 <label id="lblPassword" class="lblPassword">Contrase&ntilde;a</label>
                                 <input type="password" class="form-control" id="txtPassword" placeholder="Contraseña">
                             </div>
-                            <button type="button" class="btn btn-default">
-                                <a href="registro.html">
-                                <span class="glyphicon glyphicon-new-window"></span> Registrarce
-                            </button>
-                            <button type="button" class="btn btn-default">
-                                <span class="glyphicon glyphicon-saved"></span> Enviar
-                            </button>
-                            <!--<button type="submit" class="btn btn-default">Enviar</button>-->
-                        </form>
-
+                            <br>
+                            <a class="btn btn-default" href="registro.html" role="button"><span class="glyphicon glyphicon-new-window"></span> Registrarce</a>
+                           <a class="btn btn-default" href="" role="button"><span class="glyphicon glyphicon-saved"></span> Enviar</a>
+                            
+                </form>
             </div>
-
+            <nav class="navbar navbar-default navbar-fixed-bottom">
+                 <div class="container">
+                     ...
+                </div>
+            </nav>
         </section>
     </body>
 </html>
