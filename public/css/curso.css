@@ -1,11 +1,21 @@
 .f{
     background-color: tomato;
     color:black
-    
+
 }
 #contenedor-1
 {
     /*background: #007bb6;*/
     border-top: 1px solid red;
     margin-top: 20px;
+}
+.nueva{
+    background: #00B2AF;
+    color: tomato;
+}
+html body nav.navbar.navbar-default.nueva div.container-fluid div#bs-example-navbar-collapse-1.collapse.navbar-collapse ul.nav.navbar-nav li a{
+
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
 }

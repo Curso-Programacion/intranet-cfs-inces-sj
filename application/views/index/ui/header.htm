@@ -5,51 +5,76 @@
         <title>Programaci&oacute;n Inces</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <!-- Bootstrap -->
-            <link href="/CursoInces/curso/programacion-inces/PHP/Profesor/core/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">		
-            <link href="core/font-awesome/css/font-awesome.min.css" rel="stylesheet" media="screen">		
+            <link href="core/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">		
+                <link href="core/font-awesome/css/font-awesome.min.css" rel="stylesheet" media="screen">		
+                    <link href="public/css/curso.css" rel="stylesheet" media="screen">		
 
-                <script src="/CursoInces/curso/programacion-inces/PHP/Profesor/core/jquery/jquery-2.1.1.min.js"></script>
-                <script src="/CursoInces/curso/programacion-inces/PHP/Profesor/core/bootstrap/js/bootstrap.min.js"></script>
-                <script src="/CursoInces/curso/programacion-inces/PHP/Profesor/public/js/profesor.js"></script>
+                        <script src="core/jquery/jquery-2.1.1.min.js"></script>
+                        <script src="core/bootstrap/js/bootstrap.min.js"></script>
+                        <script src="public/js/profesor.js"></script>
 
-                </head>
+                        </head>
 
-                <body>
-                     <header>
-            <div >                
-                <img  alt="" src="public/img/header.png" class="img-responsive" style="width: 100%">
-            </div>
-        </header>
+                        <body>
+                            <header>
+                                <div >                
+                                    <img  alt="" src="public/img/header.png" class="img-responsive" style="width: 100%">
+                                </div>
 
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li class="active">
-                            <a  href="index.html">Contenido Programatico</a>
-                        </li>
-                        <li><a href="soportetecnico.html">Soporte T&eacute;cnico</a></li>
-                        <li><a href="lenguajesprogramacion.html">Lenguaje de Programaci&oacute;n</a></li>
-                        <li><a href="proyectos.html">Proyectos</a></li>
-                        <li><a href="phonegap.html">Programaci&oacute;n M&oacute;vil</a></li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="softwarelibre.html"><i class="fa fa-users"></i> Iniciar Sesi&oacute;n</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-                    <div class="container">			
+                            </header>
 
-                        <cente>
-                            <h3>Programación en PHP ->Creación de un CRUD"Create, Read, Update y Delete" </h3>        
-                        </cente>
-                    </div>
+                            <nav class="navbar navbar-default nueva">
+                                <div class="container-fluid">
+                                    <div class="navbar-header">
+                                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                    </div>
+                                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                        <ul class="nav navbar-nav">
+                                            <li class="active">
+                                                <a  href="index.html">Contenido Programatico</a>
+                                            </li>
+                                            <li><a href="soportetecnico.html">Soporte T&eacute;cnico</a></li>
+                                            <li><a href="lenguajesprogramacion.html">Lenguaje de Programaci&oacute;n</a></li>
+                                            <li><a href="proyectos.html">Proyectos</a></li>
+                                            <li><a href="phonegap.html">Programaci&oacute;n M&oacute;vil</a></li>
+                                        </ul>
+                                        <ul class="nav navbar-nav navbar-right">
+                                            <li><a href="#" data-remote="false" data-toggle="modal" data-target="#git" class="btn btn-info"><i class="fa fa-users"></i> Iniciar Sesi&oacute;n</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                            <div class="modal fade" id="git" tabindex="-1" role="dialog" >
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <div class="modal-body">
+                                            <div class="container-fluid">
+                                                <section>
+                                                    <div class="container">
+                                                        <form role="form">
+                                                            <h3 class="col-md-12"s>Dato personales</h3>
+                                                            <hr color="tomato" width= 50%/>
+                                                            <div class="col-md-4">
+                                                                <label id="lblFname" class="lblFname">Nombre</label>
+                                                                <input type="text" class="form-control" id="txtfname" placeholder="Introduca su nombre">
+                                                            </div>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container">			
+
+                                <cente>
+                                    <h3>Programación en PHP ->Creación de un CRUD"Create, Read, Update y Delete" </h3>        
+                                </cente>
+                            </div>
