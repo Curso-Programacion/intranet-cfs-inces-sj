@@ -10,12 +10,50 @@
     margin-top: 20px;
 }
 .nueva{
-    background: #00B2AF;
-    color: tomato;
+    background: #00B2AF !important;;
+    color: tomato !important;;
 }
 html body nav.navbar.navbar-default.nueva div.container-fluid div#bs-example-navbar-collapse-1.collapse.navbar-collapse ul.nav.navbar-nav li a{
 
     color: white;
+   
+   
+}
+.contenedor-interno-login{    
+    border-radius: 0.5em 0.5em 0.5em 0.5em;
+    box-shadow: 0 0 1em 0 red;
+    margin: 0.5em 0;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+    padding: 1em;
+
+}
+.error-acceso{
+    background: red;
+    color: white;
+}
+.error-mensaje{
+    background-color: #d0cfcd;
+    color: black;
     font-family: "Times New Roman", Times, serif;
     font-weight: bold;
+}
+.contenedor-error{
+    background-color: #e3e3e1;
+}
+.a-activo {
+    color: white !important; ;
+  
+  background-color:#5bc0de;
+  border-bottom: solid 1px tomato;
+  //border-color:#46b8da;  
+}
+
+
+
+.navbar-default .navbar-nav>li>a:hover{
+    color:#fff !important;
+    background-color: #00cccc  !important;
+  border-bottom: solid 1px tomato !important;
 }

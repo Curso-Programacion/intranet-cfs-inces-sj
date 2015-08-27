@@ -9,17 +9,71 @@
                 <link href="core/font-awesome/css/font-awesome.min.css" rel="stylesheet" media="screen">		
                     <link href="public/css/curso.css" rel="stylesheet" media="screen">		
 
+
+                        <link rel="stylesheet" href="core/Nivo-Slider//themes/default/default.css" type="text/css" media="screen" />
+                        <link rel="stylesheet" href="core/Nivo-Slider//themes/light/light.css" type="text/css" media="screen" />
+                        <link rel="stylesheet" href="core/Nivo-Slider//themes/dark/dark.css" type="text/css" media="screen" />
+                        <link rel="stylesheet" href="core/Nivo-Slider//themes/bar/bar.css" type="text/css" media="screen" />
+                        <link rel="stylesheet" href="core/Nivo-Slider//nivo-slider.css" type="text/css" media="screen" />
+
+
+
+
+
+
+
+
+
                         <script src="core/jquery/jquery-2.1.1.min.js"></script>
                         <script src="core/bootstrap/js/bootstrap.min.js"></script>
                         <script src="public/js/profesor.js"></script>
+
+
+
+                        <script type="text/javascript" src="core/Nivo-Slider/jquery.nivo.slider.js"></script>
+                        <script type="text/javascript">
+                            $(window).load(function () {
+                                $('#slider').nivoSlider();
+                            });
+                            function juan()
+                            {
+                                $("#contenedor-principal").load("lenguajesprogramacion.html", function () {
+                                    alert("Load was performed.");
+                                });
+
+                            }
+
+
+                        </script>
+
+
+
+
 
                         </head>
 
                         <body>
                             <header>
-                                <div >                
-                                    <img  alt="" src="public/img/header.png" class="img-responsive" style="width: 100%">
+
+
+
+                                <div id="wrapper">
+                                    <div class="slider-wrapper theme-default">
+                                        <div id="slider" class="nivoSlider">
+                                            <img src="public/img/slide1.png" data-thumb="public/img/slide1.png" />
+                                            <img src="public/img/1slide1.jpg" data-thumb="public/img/1slide1.jpg"/>
+                                            <img src="public/img/slide1.png" data-thumb="public/img/slide1.png" />
+                                            <img src="public/img/1slide1.jpg" data-thumb="public/img/1slide1.jpg"/>
+                                        </div>
+
+                                    </div>
+
                                 </div>
+
+
+                                <!--                                <div >                
+                                                                    <img  alt="" src="public/img/header.png" class="img-responsive" style="width: 100%">
+                                                                </div>-->
 
                             </header>
 
@@ -35,16 +89,20 @@
                                     </div>
                                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                         <ul class="nav navbar-nav">
-                                            <li class="active">
-                                                <a  href="index.html">Contenido Programatico</a>
+                                            <li >
+                                                <a class="a-activo" href="index.html">Contenido Programatico</a>
                                             </li>
-                                            <li><a href="soportetecnico.html">Soporte T&eacute;cnico</a></li>
+                                            <li>
+                                                <a id="p1" class="p1" onclick="juan();
+                                                        return false;" href="#">Soporte T&eacute;cnico</a>
+
+                                            </li>
                                             <li><a href="lenguajesprogramacion.html">Lenguaje de Programaci&oacute;n</a></li>
                                             <li><a href="proyectos.html">Proyectos</a></li>
                                             <li><a href="phonegap.html">Programaci&oacute;n M&oacute;vil</a></li>
                                         </ul>
                                         <ul class="nav navbar-nav navbar-right">
-                                            <li><a href="#" data-remote="false" data-toggle="modal" data-target="#git" class="btn btn-info"><i class="fa fa-users"></i> Iniciar Sesi&oacute;n</a></li>
+                                            <li><a href="#" data-remote="false" data-toggle="modal" data-target="#git"><i class="fa fa-users"></i> Iniciar Sesi&oacute;n</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -78,3 +136,10 @@
                                     <h3>Programación en PHP ->Creación de un CRUD"Create, Read, Update y Delete" </h3>        
                                 </cente>
                             </div>
+
+
+
+
+                            <div id="contenedor-principal" class="contenedor-principal">
+                            </div>
+                            <div id="loading" style="display: none;"><div class="imgLoad"></div></div>

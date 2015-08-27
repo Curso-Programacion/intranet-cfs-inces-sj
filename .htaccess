@@ -3,3 +3,6 @@
 #    RewriteRule ^(application|config|db|library|public|scripts|tmp)/ - [F]
 # </IfModule>
 
+Options -Indexes
+ErrorDocument 403 /intranet-cfs-inces-sj/error-servidor/p.php
+ErrorDocument 404 /intranet-cfs-inces-sj/error-servidor/error_404.html
