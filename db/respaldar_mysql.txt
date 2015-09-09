@@ -1,0 +1,1 @@
+mysql --user=root  intranet_cfs_inces_sj < C:\xampp\htdocs\intranet\db\intranet_cfs_inces_sj.sql
