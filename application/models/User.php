@@ -15,8 +15,9 @@ class User {
 	}
 
 	public function add($user){		
+		//var_dump($user);
 		$sth = $this->dbh->prepare("INSERT INTO users(name, email, mobile, address) VALUES (?, ?, ?, ?)");
-		$sth->execute(array($user->name, $user->email, $user->mobile, $user->address));		
+                $sth->execute(array($user->name, $user->email, $user->mobile, $user->address));		
 		return json_encode($this->dbh->lastInsertId());
 	}
 	

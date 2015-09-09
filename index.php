@@ -1,5 +1,5 @@
 <?php include("application/views/index/ui/header.htm"); ?>
-<?php include("application/views/index/ui//nav.htm"); ?>
+<?php include("application/views/index/ui/nav.htm"); ?>
 <div id="content"></div>
 
 <?php include("application/views/index/ui/deleteconfirmmodal.htm"); ?>
